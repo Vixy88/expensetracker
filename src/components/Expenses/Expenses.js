@@ -10,6 +10,7 @@ const Expenses = ({ expenses }) => {
           <ExpenseItem
             key={expense.id}
             title={expense.title}
+            description={expense.description}
             amount={expense.amount}
             date={expense.date}
           />
