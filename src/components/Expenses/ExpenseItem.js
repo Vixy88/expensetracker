@@ -21,7 +21,7 @@ const ExpenseItem = (props) => {
         <h2>{title ? props.title : props.description}</h2>
         <div>
           <button onClick={clickHandler} className="expense-item__btn-toggle">
-            {title ? "＋ Show Description " : "＋ Show Title"}
+            {title ? "+ Show Description " : "+ Show Title"}
           </button>
         </div>
         <p className="expense-item__price">£{props.amount}</p>
