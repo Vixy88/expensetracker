@@ -3,7 +3,7 @@ import ExpenseDate from "../Expenses/ExpenseDate";
 
 import "./ExpenseForm.css";
 
-const ExpenseForm = () => {
+const ExpenseForm = (props) => {
   const [enteredTitle, setEnteredTitle] = useState("");
   const [enteredAmount, setEnteredAmount] = useState("");
   const [enteredDate, setEnteredDate] = useState("");
@@ -28,7 +28,8 @@ const ExpenseForm = () => {
       date: new Date(enteredDate),
     };
 
-    console.log(expenseData);
+    // Pass the data into the NewExpense component object
+    props.onSaveExpenseData(expenseData);
 
     // Clear the form after submission
     setEnteredTitle("");

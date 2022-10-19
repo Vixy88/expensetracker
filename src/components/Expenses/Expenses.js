@@ -3,10 +3,10 @@ import React from "react";
 import ExpenseItem from "./ExpenseItem";
 import "./Expenses.css";
 
-const Expenses = ({ expenses }) => {
+const Expenses = ({ items }) => {
   return (
     <Card className="expenses">
-      {expenses.map((expense) => {
+      {items.map((expense) => {
         return (
           <ExpenseItem
             key={expense.id}
