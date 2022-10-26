@@ -22,3 +22,15 @@
   font-weight: bold;
   border-radius: 6px;
 }
+
+.expenses-filer__bar {
+  width: 10px;
+  height: 100px;
+  background-color: #fff;
+  width: 50px;
+}
+
+.expenses-filer__barchart {
+  display: flex;
+  justify-content: center;
+}
