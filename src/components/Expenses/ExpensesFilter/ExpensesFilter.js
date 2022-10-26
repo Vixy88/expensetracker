@@ -15,51 +15,51 @@ const ExpensesFilter = ({ items }) => {
         </select>
       </div>
       <div className="expenses-filer__barchart">
-        <div>
+        <div className="center">
           <div className="expenses-filer__bar"></div>
           <label>Jan</label>
         </div>
-        <div>
+        <div className="center">
           <div className="expenses-filer__bar"></div>
           <label>Feb</label>
         </div>
-        <div>
+        <div className="center">
           <div className="expenses-filer__bar"></div>
           <label>Mar</label>
         </div>
-        <div>
+        <div className="center">
           <div className="expenses-filer__bar"></div>
           <label>Apr</label>
         </div>
-        <div>
+        <div className="center">
           <div className="expenses-filer__bar"></div>
           <label>May</label>
         </div>
-        <div>
+        <div className="center">
           <div className="expenses-filer__bar"></div>
           <label>Jun</label>
         </div>
-        <div>
+        <div className="center">
           <div className="expenses-filer__bar"></div>
           <label>July</label>
         </div>
-        <div>
+        <div className="center">
           <div className="expenses-filer__bar"></div>
           <label>Aug</label>
         </div>
-        <div>
+        <div className="center">
           <div className="expenses-filer__bar"></div>
           <label>Sep</label>
         </div>
-        <div>
+        <div className="center">
           <div className="expenses-filer__bar"></div>
           <label>Oct</label>
         </div>
-        <div>
+        <div className="center">
           <div className="expenses-filer__bar"></div>
           <label>Nov</label>
         </div>
-        <div>
+        <div className="center">
           <div className="expenses-filer__bar"></div>
           <label>Dec</label>
         </div>
