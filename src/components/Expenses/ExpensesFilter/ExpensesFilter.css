@@ -26,12 +26,14 @@
 .expenses-filer__bar {
   height: 100px;
   background-color: #fff;
-  width: 25px;
+  width: 10px;
+  border-radius: 12px;
+  margin: 0 10px;
 }
 
 .expenses-filer__barchart {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .center {

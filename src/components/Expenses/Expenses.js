@@ -1,10 +1,12 @@
 import Card from "../UI/Card";
-import React from "react";
+import React, { useState } from "react";
 import ExpenseItem from "./ExpenseItem";
 import ExpensesFilter from "./ExpensesFilter/ExpensesFilter";
 import "./Expenses.css";
 
 const Expenses = ({ items }) => {
+  const [year, setYear] = useState("");
+
   return (
     <section>
       <Card className="expenses">
