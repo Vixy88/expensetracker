@@ -7,11 +7,16 @@ import "./Expenses.css";
 const Expenses = ({ items }) => {
   const [year, setYear] = useState("");
 
+  const filterByYear = () => {
+    if (year === "2022") {
+    }
+  };
+
   return (
     <section>
       <Card className="expenses">
         <div>
-          <ExpensesFilter data={items} />
+          <ExpensesFilter onFilterByYear={filterByYear} />
         </div>
         {items.map((expense) => {
           return (
