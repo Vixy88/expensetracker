@@ -5,12 +5,15 @@ import ExpensesFilter from "./ExpensesFilter/ExpensesFilter";
 import "./Expenses.css";
 
 const Expenses = ({ items }) => {
-  const [year, setYear] = useState("");
+  let filteredExpenses = [];
 
-  const filterByYear = () => {
-    if (year === "2022") {
-    }
+  const filterByYear = (year) => {
+    filteredExpenses = items.filter(
+      (expense) => expense.date.getFullYear() === Number(year)
+    );
   };
+
+  console.log(filteredExpenses);
 
   return (
     <section>
