@@ -18,25 +18,31 @@ const Expenses = ({ items }) => {
     );
   }
 
-  console.log(filteredExpenses);
-
   return (
     <section>
       <Card className="expenses">
         <div>
           <ExpensesFilter year={year} onYearChange={yearChangeHandler} />
         </div>
-        {filteredExpenses.map((expense) => {
-          return (
-            <ExpenseItem
-              key={expense.id}
-              title={expense.title}
-              description={expense.description}
-              amount={expense.amount}
-              date={expense.date}
-            />
-          );
-        })}
+        {filteredExpenses.length === 0 ? (
+          <div>
+            <h2 style={{ color: "white", textAlign: "center" }}>
+              No Expenses Submitted 🥳
+            </h2>
+          </div>
+        ) : (
+          filteredExpenses.map((expense) => {
+            return (
+              <ExpenseItem
+                key={expense.id}
+                title={expense.title}
+                description={expense.description}
+                amount={expense.amount}
+                date={expense.date}
+              />
+            );
+          })
+        )}
       </Card>
     </section>
   );
