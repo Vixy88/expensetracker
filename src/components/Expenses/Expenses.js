@@ -27,7 +27,7 @@ const Expenses = ({ items }) => {
         {filteredExpenses.length === 0 ? (
           <div>
             <h2 style={{ color: "white", textAlign: "center" }}>
-              No Expenses Submitted 🥳
+              No Expenses Found 🥳
             </h2>
           </div>
         ) : (
