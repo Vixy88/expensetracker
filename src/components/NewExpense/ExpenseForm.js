@@ -1,5 +1,4 @@
 import { useState } from "react";
-import ExpenseDate from "../Expenses/ExpenseDate";
 
 import "./ExpenseForm.css";
 
