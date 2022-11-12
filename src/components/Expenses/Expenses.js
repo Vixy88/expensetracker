@@ -2,6 +2,7 @@ import Card from "../UI/Card";
 import React, { useState } from "react";
 import ExpenseItem from "./ExpenseItem";
 import ExpensesFilter from "./ExpensesFilter/ExpensesFilter";
+import ExpenseList from "./ExpenseList";
 import "./Expenses.css";
 
 const Expenses = ({ items }) => {
@@ -18,11 +19,12 @@ const Expenses = ({ items }) => {
     );
   }
 
-  console.log(filteredExpenses);
-
   return (
     <section>
       <Card className="expenses">
+        <div>
+          <ExpenseList />
+        </div>
         <div>
           <ExpensesFilter year={year} onYearChange={yearChangeHandler} />
         </div>
