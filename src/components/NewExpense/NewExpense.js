@@ -19,13 +19,19 @@ const NewExpense = (props) => {
   return (
     <div className="new-expense">
       {visible ? (
-        <div>
-          <button onClick={handleClick}>Hide Form</button>{" "}
+        <div className="animate">
+          <div className="flex-row-reverse">
+            <button onClick={handleClick} className="btn-hide">
+              Hide Form
+            </button>
+          </div>
           <ExpenseForm onSaveExpenseData={saveExpenseDataHandler} />
         </div>
       ) : (
         <div>
-          <button onClick={handleClick}>Add New Expense</button>
+          <button onClick={handleClick} className="btn-show">
+            Add New Expense
+          </button>
         </div>
       )}
     </div>
