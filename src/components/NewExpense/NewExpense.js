@@ -14,13 +14,20 @@ const NewExpense = (props) => {
     props.onAddExpense(expenseData);
   };
 
+  const handleClick = () => setVisible(!visible);
+
   return (
     <div className="new-expense">
-      <div>
-        <button onClick={() => setVisible(true)}>Add New Expense</button>
-        <button onClick={() => setVisible(false)}>Hide Form</button>
-      </div>
-      {visible && <ExpenseForm onSaveExpenseData={saveExpenseDataHandler} />}
+      {visible ? (
+        <div>
+          <button onClick={handleClick}>Hide Form</button>{" "}
+          <ExpenseForm onSaveExpenseData={saveExpenseDataHandler} />
+        </div>
+      ) : (
+        <div>
+          <button onClick={handleClick}>Add New Expense</button>
+        </div>
+      )}
     </div>
   );
 };
